@@ -11,7 +11,7 @@ export const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY).then((result) => {
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, import.meta.env.VITE_PUBLIC_KEY, e.target).then((result) => {
             alert("Message sent successfully!");
             setFormData({name: "", email: "", message: ""});
         }).catch(() => alert ("Opps! Something went wrong"));

@@ -2,8 +2,10 @@ import { useEffect, useRef } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-    const frontendSkills = ["HTML", "CSS", "React", "Tailwind"];
+    const frontendSkills = ["HTML", "CSS", "React", "Tailwind", "Bootstrap"];
     const backendSkills = ["MySQL"];
+    const programmingLanguages = ["C++", "Java", "PHP", "Dart", "C#"];
+    const frameworks = ["Laravel", "Flutter"];
 
     return <section id="about" className="min-h-screen flex items-center justify-center justify-center px-20">
         <RevealOnScroll>
@@ -17,6 +19,20 @@ export const About = () => {
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4"> Programming Languages </h3>
+                            <div className="flex flex-wrap gap-2"> {programmingLanguages.map((tech, key) => <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                                {tech}
+                            </span>)} </div>
+                        </div>
+                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                            <h3 className="text-xl font-bold mb-4"> Frameworks </h3>
+                            <div className="flex flex-wrap gap-2"> {frameworks.map((tech, key) => <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                                {tech}
+                            </span>)} </div>
+                        </div>
                         <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4"> Frontend </h3>
                             <div className="flex flex-wrap gap-2"> {frontendSkills.map((tech, key) => <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -57,11 +73,12 @@ export const About = () => {
                         <div className="space-y-4 text-gray-300">
                             <div>
                                 <h4 className="font-semibold">
-                                    Intern at Sidoarjo District Land Office (2025)
+                                    {/* Intern at Sidoarjo District Land Office (2025) */}
+                                    On Progress
                                 </h4>
-                                <p>
+                                {/* <p>
                                     Developed a web application using...
-                                </p>
+                                </p> */}
                             </div>
                             {/* <div>
                             <h4 className="font-semibold">

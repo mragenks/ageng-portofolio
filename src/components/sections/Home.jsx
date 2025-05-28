@@ -6,11 +6,11 @@ export const Home = () => {
         <RevealOnScroll>
             <div className="text-center z-10 px-4">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-                    <span className="text-white">Hi,</span> I'm Muhammad <span className="text-white">Ageng</span> Sasmito
+                    <span className="text-white">Hi,</span> I'm Muhammad Ageng Sasmito
                 </h1>
 
                 <p className="text-gray-400 text-lg mb-8 max-auto">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cumque consequuntur ipsum quia soluta reiciendis libero eaque porro itaque nihil. Delectus odit explicabo nemo consequuntur natus illum similique adipisci tempora!
+                    As a <span className="font-bold text-white">sixth-semester software engineering student</span>, I am deeply exploring various aspects of software engineering, from design to implementation. I am focused on developing myself to become a competent professional in the tech industry.    
                 </p>
 
                 <div className="flex justify-center space-x-4">
